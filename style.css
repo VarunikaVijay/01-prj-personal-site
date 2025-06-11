@@ -1,1 +1,250 @@
 /* Add you CSS here */
+
+/* Set the main background and text colors */
+body {
+  background-color: #fffaf0; /* floral white */
+  color: #333; /* dark gray */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fixed navigation bar styles */
+nav {
+  position: fixed; /* stays at the top */
+  top: 0;
+  width: 100%;
+  background-color: #fffaf0; /* same as body for minimalist look */
+  border-bottom: 1px solid #f4ede4; /* subtle border */
+  z-index: 1000; /* stays above other content */
+}
+
+/* Navigation list styles */
+nav ul {
+  list-style: none; /* remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex; /* horizontal layout */
+  justify-content: center; /* center the links */
+}
+
+/* Navigation link styles */
+nav ul li {
+  margin: 0 1.5em; /* space between links */
+}
+
+nav ul li a {
+  color: #8e44ad; /* purple accent */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em 0.5em;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+  color: #e67e22; /* orange accent */
+}
+
+/* Remove extra margin and padding from hero, so it sits just below the nav bar */
+.hero {
+  text-align: center;
+  padding: 40px 20px 40px 20px; /* less top and bottom padding so content is higher in the box */
+  background-color: #f4ede4; /* subtle background */
+  max-width: 600px; /* match other sections */
+  margin: 100px auto 0 auto; /* move the whole box down below nav bar */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(244, 237, 228, 0.3); /* subtle shadow */
+}
+
+/* Set a background image only for the hero section (Home) */
+/* The image will repeat to fill the hero section */
+/* This uses a subtle gradient background image */
+.hero {
+  background-image: url('https://www.freevector.com/uploads/vector/preview/93058/vecteezySubtle_GradientBackgroundbAP02232_generated.jpg');
+  background-repeat: repeat;
+  background-size: auto; /* Keeps the original image size */
+  background-color: #f9f6f2; /* Fallback color */
+}
+
+/* Remove extra top padding/margin for hero in the global rule */
+section, .hero {
+  padding-top: 0; /* no extra top padding */
+  margin-top: 0;  /* no extra margin */
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  padding: 40px 20px 40px 20px; /* less top and bottom padding so content is higher in the box */
+  background-color: #f4ede4; /* subtle background */
+  max-width: 600px; /* match other sections */
+  margin: 100px auto 0 auto; /* move the whole box down below nav bar */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(244, 237, 228, 0.3); /* subtle shadow */
+}
+
+.hero h1 {
+  color: #222; /* slightly darker for headings */
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Style for the profile picture in the hero section */
+.profile-pic {
+  width: 140px; /* set the size of your photo */
+  height: 140px;
+  object-fit: cover; /* keeps the image nicely cropped */
+  border-radius: 50%; /* makes the image round */
+  border: 3px solid #8e44ad; /* purple border for accent */
+  margin-bottom: 20px;
+  background: #fffaf0; /* fallback background */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section headings */
+section h2 {
+  color: #222;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Section content */
+section {
+  max-width: 600px;
+  margin: 20px auto; /* reduced space between sections */
+  padding: 20px;
+  background: #fffaf0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(244, 237, 228, 0.3); /* subtle shadow */
+}
+
+/* Skills list container: use flex to wrap boxes to new lines */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap; /* allows boxes to move to next line */
+  gap: 10px; /* space between boxes */
+  margin-bottom: 10px;
+  margin-top: 10px;
+  justify-content: flex-start; /* align boxes to the left */
+  padding: 0;
+}
+
+/* Each skill in a colored box */
+.skill-box {
+  background-color: #f4ede4; /* same as hero section */
+  color: #333;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(244, 237, 228, 0.3);
+  border: 1px solid #e0d6c3;
+}
+
+/* Add space between Font Awesome icon and skill text */
+.skill-box i {
+  margin-right: 8px;
+}
+
+/* Remove bullet points from old lists (if any remain) */
+#skills ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Skills list */
+#skills ul {
+  padding-left: 1.2em;
+}
+
+#skills li {
+  margin-bottom: 0.5em;
+}
+
+/* Add spacing between skill sections */
+#skills h3 {
+  margin-top: 1.5em;
+  color: #8e44ad; /* accent color for subheadings */
+  text-align: left;
+  font-size: 1.1em;
+}
+
+/* Contact links */
+#contact a {
+  color: #8e44ad;
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  color: #e67e22;
+}
+
+/* Contact links in boxes, similar to skills */
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  justify-content: center; /* center the contact boxes */
+}
+
+.contact-box {
+  background-color: #f4ede4; /* same as hero/skills section */
+  color: #8e44ad;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(244, 237, 228, 0.3);
+  border: 1px solid #e0d6c3;
+  text-decoration: none !important; /* force remove underline */
+  font-weight: bold;
+  transition: color 0.2s, background 0.2s;
+}
+
+/* Add space between the icon and the text in contact boxes */
+.contact-box .contact-icon {
+  margin-right: 10px;
+  color: #8e44ad;
+}
+
+/* Remove underline from all links inside #contact just in case */
+#contact a {
+  text-decoration: none !important;
+  color: #8e44ad;
+}
+
+#contact a:hover {
+  color: #e67e22;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f4ede4; /* light beige */
+  color: #333;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 40px;
+  font-size: 0.95em;
+  border-top: 1px solid #f4ede4;
+}
+
+/* Indent the bio paragraph in the About Me section and increase line spacing */
+#about p {
+  text-indent: 2em; /* adds indentation to the first line */
+  line-height: 1.7;  /* increases space between lines */
+}
